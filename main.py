@@ -1,8 +1,7 @@
 from keysel.questions import choiceques
 from keysel import qprompt
 
-x = choiceques("are you gay", ["yes", "not no"], "no")
+ques1 = choiceques("are you gay", ["yes", "no"], "no")
 
-print(x.testing())
-qprompt("HIII")
+qprompt(ques1.testing(), ["c", "r", "h"])
 

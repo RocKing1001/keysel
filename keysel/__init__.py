@@ -1,5 +1,3 @@
-import getch
-
 '''
 Style: accepts rgb values for ques, ans, icon, tip, highlight
 '''
@@ -10,9 +8,11 @@ style = {
 }
 
 RESET = '\033[0m'
-def qprompt(ques, style=style):
+
+
+def qprompt(ques, choices, style=style):
     qstyle = style["ques"].replace(" ", "")
     astyle = style["ans"].replace(" ", "")
-    print(qstyle+ques+astyle, end="")
-    char = getch.getch()
-    print(char)
+    tstyle = style["tip"].replace(" ", "")
+    groupedChoices = "".join(choices)
+    return (f"{qstyle}{ques}{tstyle} ({groupedChoices}){astyle} ")
