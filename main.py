@@ -1,7 +1,7 @@
 from keysel.questions import choiceques
 from keysel import qprompt
 
-ques1 = choiceques("are you gay", ["yes", "no"], "no")
+ques1 = choiceques("The answer is c", ["c", "r", "h"], "c")
 
-qprompt(ques1.testing(), ["c", "r", "h"])
+ques1.inptAns(qprompt(ques1.getques(), ["c", "r", "h"]), {"key":"h", "help": "PRESS C to answer CISC\nPRESS R to answer RISC"})
 
