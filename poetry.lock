@@ -6,13 +6,40 @@ category = "main"
 optional = false
 python-versions = "*"
 
+[[package]]
+name = "prompt-toolkit"
+version = "3.0.20"
+description = "Library for building powerful interactive command lines in Python"
+category = "main"
+optional = false
+python-versions = ">=3.6.2"
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
+name = "wcwidth"
+version = "0.2.5"
+description = "Measures the displayed width of unicode strings in a terminal"
+category = "main"
+optional = false
+python-versions = "*"
+
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "30af6b1a163e9eab78ad9677fc5d58e3fa1a1b4b5849b031992f237aa48c6c6e"
+content-hash = "84a6d777bdb061ba2967369b8632505832120660cb74e967bbdab2b0d0b9a39c"
 
 [metadata.files]
 getch = [
     {file = "getch-1.0-python2.tar.gz", hash = "sha256:be451438f7a2b389f96753aea39b6ed2540a390f1b9a12badcbc110cf9a5ce7f"},
     {file = "getch-1.0.tar.gz", hash = "sha256:a6c22717c10051ce65b8fb7bddb171af705b1175e694a73be956990f6089d8b1"},
+]
+prompt-toolkit = [
+    {file = "prompt_toolkit-3.0.20-py3-none-any.whl", hash = "sha256:6076e46efae19b1e0ca1ec003ed37a933dc94b4d20f486235d436e64771dcd5c"},
+    {file = "prompt_toolkit-3.0.20.tar.gz", hash = "sha256:eb71d5a6b72ce6db177af4a7d4d7085b99756bf656d98ffcc4fecd36850eea6c"},
+]
+wcwidth = [
+    {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
+    {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
 ]

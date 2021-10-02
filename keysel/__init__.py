@@ -15,4 +15,10 @@ def qprompt(ques, choices, style=style):
     astyle = style["ans"].replace(" ", "")
     tstyle = style["tip"].replace(" ", "")
     groupedChoices = "".join(choices)
-    return f"{qstyle}{ques}{tstyle} ({groupedChoices}){RESET}{astyle} "
+    # return f"{qstyle}{ques}{tstyle} ({groupedChoices}){RESET}{astyle} "
+    # return f"{ques} ({groupedChoices}) "
+    return [
+        ('class:icon', "? "),
+        ('class:ques', ques),
+        ('class:choices', f" ({groupedChoices}) ")
+    ]
